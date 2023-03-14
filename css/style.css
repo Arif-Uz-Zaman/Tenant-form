@@ -1,7 +1,12 @@
+.Form{
+    width: 100%;
+}
+
 form { 
      
     width:80%;
     margin-left: 300px;
+
     
     }
 
@@ -41,7 +46,7 @@ input[type=number] {
 }
 
 .box2 input[type="text"]{
-    width: 68.4%;
+    width: 66.8%;
 
 }
 
