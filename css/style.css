@@ -1,0 +1,217 @@
+
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px dotted #000000;
+}
+
+input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px dotted #000000;
+}
+
+input[type=number] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px dotted #000000;
+}
+
+.box1{
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 104px;
+    margin-bottom: 15px;
+}
+
+.box1 input[type="text"]{
+    width: 60%;
+
+}
+
+.box2{
+    text-align: center;
+    margin-left: 99px;
+    margin-bottom: 15px;
+}
+
+.box2 input[type="text"]{
+    width: 66.8%;
+
+}
+
+.row1_of2{
+    text-align: center;
+    margin-left: 98px;
+    margin-bottom: 15px;
+    
+}
+
+.row1_of2 input[type="text"]{
+    width: 24%;
+
+}
+
+#married_status{
+    width: 34%;
+}
+
+.box3{
+    text-align: center;
+    margin-left: 105px;
+    margin-bottom: 15px;
+}
+
+.box3 input[type="text"]{
+    width: 66.9%;
+
+}
+.box4{
+    text-align: center;
+    margin-left: 129px;
+    margin-bottom: 15px;
+}
+
+.box4 input[type="text"]{
+    width: 74.5%;
+
+}
+
+.box5{
+    text-align: center;
+    margin-left: 103px;
+    margin-bottom: 15px;
+}
+
+.box5 input[type="text"]{
+    width: 56.3%;
+
+}
+
+.box6{
+    text-align: center;
+    margin-left: 103px;
+    margin-bottom: 15px;
+}
+
+.box6 input{
+    width: 61%;
+
+}
+
+.box7{
+    text-align: center;
+    margin-left: 103px;
+    margin-bottom: 15px;
+}
+
+.box7 input{
+    width: 59.8%;
+
+}
+
+.row1_of2_2{
+    text-align: center;
+    margin-left: 102px;
+    margin-bottom: 15px;
+    
+}
+
+.row1_of2_2 input[type="text"]{
+    width: 30.6%;
+
+}
+
+.row1_of2_3{
+    text-align: center;
+    margin-left: 104px;
+    margin-bottom: 15px;
+    
+}
+
+.row1_of2_3 input{
+    width: 28.6%;
+
+}
+
+.row1{
+    text-align: center;
+    
+}
+
+.emergency{
+    margin-left: -803px;
+    margin-bottom: 15px;
+}
+.table{
+    text-align: center;
+}
+.family{
+    margin-left: -650px;
+    margin-bottom: 15px;
+}
+
+.row1_of2_4{
+    text-align: center;
+    margin-left: 104px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+.row1_of2_4 input{
+    width: 28.6%;
+    margin-bottom: 8px;
+
+}
+
+.row1_of2_5{
+    text-align: center;
+    margin-left: 104px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+.row1_of2_5 input{
+    width: 26.3%;
+    margin-bottom: 15px;
+
+}
+.Table{
+    margin-left: 305px;
+    margin-top: 10px;
+}
+
+.Table input[type=text]{
+   
+    background: transparent;
+    border-bottom: none;
+    
+    
+}
+
+.Table input[type=number]{
+   
+    background: transparent;
+    border-bottom: none;
+    
+    
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 65.5%;
+
+  }
+
+td, th {
+    border: 1px solid black;
+   
+    
+  }
+
+td{
+    height: 30px;
+}

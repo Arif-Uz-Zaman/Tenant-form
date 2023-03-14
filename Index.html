@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---resources files ---->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tenant form</title>
+  </head>
+
+  <body>
+    <form action="/action_page.php">
+      <div class="box1">
+        <label>১. ভাড়াটিয়া/বাড়ীওয়ালার নাম :</label>
+        <input type="text" id="fname" name="fname" value="" />
+      </div>
+      <div class="box2">
+        <label>২. পিতার নাম :</label>
+        <input type="text" id="Father_name" name="Father_name" value="" />
+      </div>
+      <div class="row1_of2">
+        <label>৩. জন্ম তারিখ :</label>
+        <input type="text" id="date_of_birth" name="date_of_birth" value="" />
+        <label for="lname"> বৈবাহিক অবস্থা :</label>
+        <input
+          class="input2"
+          type="text"
+          id="married_status"
+          name="married_status"
+          value=""
+        />
+      </div>
+      <div class="box3">
+        <label>৪. স্থায়ী ঠিকানা :</label>
+        <input
+          type="text"
+          id="Present_address"
+          name="Present_address"
+          value=""
+        />
+      </div>
+      <div class="box4">
+        <input
+          type="text"
+          id="Present_address"
+          name="Present_address"
+          value=""
+        />
+      </div>
+      <div class="box5">
+        <label>৫. পেশা ও প্রতিষ্ঠান/কর্মস্থলের ঠিকানা :</label>
+        <input
+          type="text"
+          id="Present_address"
+          name="Present_address"
+          value=""
+        />
+      </div>
+      <div class="row1_of2_2">
+        <label>৬. ধর্ম :</label>
+        <input type="text" id="religion" name="religion" value="" />
+        <label> শিক্ষাগত যোগ্যতা :</label>
+        <input
+          type="text"
+          id="edu_Qualification"
+          name="edu_Qualification"
+          value=""
+        />
+      </div>
+      <div class="row1_of2_3">
+        <label>৭. মোবাইল নম্বর :</label>
+        <input type="number" id="mobile_number" name="mobile_number" value="" />
+        <label> ই-মেইল আইডি :</label>
+        <input type="email" id="email" name="email" value="" />
+      </div>
+      <div class="box6">
+        <label>৮. জাতীয় পরিচয়পত্র নম্বর :</label>
+        <input type="number" id="nid_number" name="nid_number" value="" />
+      </div>
+      <div class="box7">
+        <label>৯. পাসপোর্ট নম্বর (যদি থাকে) :</label>
+        <input type="number" id="p_number" name="p_number" value="" />
+      </div>
+      <div class="row1">
+        <label class="emergency">১০. জরুরী যোগাযোগ :</label><br />
+        <div class="row1_of2_4">
+          <label>(ক) নাম :</label>
+          <input type="text" id="E_name" name="E_name" value="" />
+          <label>(খ) সম্পর্ক :</label>
+          <input type="text" id="relation" name="relation" value="" /><br />
+        </div>
+        <div class="row1_of2_5">
+          <label>(গ) ঠিকানা :</label>
+          <input type="text" id="e_address" name="e_address" value="" />
+          <label>(ঘ) মোবাইল নম্বর :</label>
+          <input type="number" id="e_number" name="e_number" value="" />
+        </div>
+      </div>
+      <div class="table">
+        <label class="family">১১. পরিবার / মেসের সঙ্গীয় সদস্যদের বিবরণ :</label
+        ><br />
+        <table class="Table">
+          <tr>
+            <th>ক্রঃ নং</th>
+            <th>নাম </th>
+            <th>বয়স </th>
+            <th>পেশা </th>
+            <th>মোবাইল নম্বর</th>
+          </tr>
+          <tr>
+            <td>১।</td>
+            <td><input type="text" name="name" /></td>
+            <td><input type="number" name="age" /></td>
+            <td><input type="text" name="occupation" /></td>
+            <td><input type="number" name="mobile-number" /></td>
+          </tr>
+          <tr>
+            <td>২।</td>
+            <td><input type="text" name="name" /></td>
+            <td><input type="number" name="age" /></td>
+            <td><input type="text" name="occupation" /></td>
+            <td><input type="number" name="mobile-number" /></td>
+          </tr>
+          <tr>
+            <td>৩।</td>
+            <td><input type="text" name="name" /></td>
+            <td><input type="number" name="age" /></td>
+            <td><input type="text" name="occupation" /></td>
+            <td><input type="number" name="mobile-number" /></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
