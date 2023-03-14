@@ -17,20 +17,21 @@
   </head>
 
   <body>
+  <div class="Container">
     <form action="/action_page.php">
     
       <div class="box1">
-        <label>১. ভাড়াটিয়া/বাড়ীওয়ালার নাম :</label>
+        <label id="Fname">১. ভাড়াটিয়া/বাড়ীওয়ালার নাম :</label>
         <input type="text" id="fname" name="fname" value="" />
       </div>
       <div class="box2">
-        <label>২. পিতার নাম :</label>
+        <label id="father">২. পিতার নাম :</label>
         <input type="text" id="Father_name" name="Father_name" value="" />
       </div>
       <div class="row1_of2">
         <label>৩. জন্ম তারিখ :</label>
         <input type="text" id="date_of_birth" name="date_of_birth" value="" />
-        <label for="lname"> বৈবাহিক অবস্থা :</label>
+        <label id="lname"> বৈবাহিক অবস্থা :</label>
         <input
           class="input2"
           type="text"
@@ -117,21 +118,21 @@
             <th>মোবাইল নম্বর</th>
           </tr>
           <tr>
-            <td>১।</td>
+            <td class="td1">১।</td>
             <td><input type="text" name="name" /></td>
             <td><input type="number" name="age" /></td>
             <td><input type="text" name="occupation" /></td>
             <td><input type="number" name="mobile-number" /></td>
           </tr>
           <tr>
-            <td>২।</td>
+            <td class="td1">২।</td>
             <td><input type="text" name="name" /></td>
             <td><input type="number" name="age" /></td>
             <td><input type="text" name="occupation" /></td>
             <td><input type="number" name="mobile-number" /></td>
           </tr>
           <tr>
-            <td>৩।</td>
+            <td class="td1">৩।</td>
             <td><input type="text" name="name" /></td>
             <td><input type="number" name="age" /></td>
             <td><input type="text" name="occupation" /></td>
@@ -141,5 +142,6 @@
       </div>
     
     </form>
+  </div>
   </body>
 </html>

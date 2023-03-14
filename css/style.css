@@ -2,235 +2,183 @@
     width: 100%;
 }
 
-form { 
-     
-    width:80%;
-    margin-left: 300px;
+.Container {
+    display: flex;
+    justify-content: center;
+}
 
-    
-    }
+form {
+    width:90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
 
-input[type=text] {
+input[type=text], input[type=email], input[type=number] {
     background: transparent;
     border: none;
     border-bottom: 2px dotted #000000;
+    width: 100%;
 }
 
-input[type=email] {
-    background: transparent;
-    border: none;
-    border-bottom: 2px dotted #000000;
-}
-
-input[type=number] {
-    background: transparent;
-    border: none;
-    border-bottom: 2px dotted #000000;
-}
-
-.box1{
+.box1 {
     margin-top: 50px;
-    
-    
     margin-bottom: 15px;
 }
 
-.box1 input[type="text"]{
-    width: 60%;
-
+.box1 input[type="text"] {
+    width: 75%;
 }
 
-.box2{
-    
+.box2 {
     margin-bottom: 15px;
 }
 
-.box2 input[type="text"]{
-    width: 66.8%;
-
+.box2 input[type="text"] {
+    width: 86.5%;
 }
 
-.row1_of2{
-    
-    
+.row1_of2 {
     margin-bottom: 15px;
-    
 }
 
-.row1_of2 input[type="text"]{
-    width: 24%;
-
+.row1_of2 input[type="text"] {
+    width: 38.5%;
 }
 
-#married_status{
+#married_status {
     width: 34%;
 }
 
-.box3{
-    
-    
+.box3 {
     margin-bottom: 15px;
 }
 
-.box3 input[type="text"]{
-    width: 67.6%;
-
+.box3 input[type="text"] {
+    width: 85.6%;
 }
-.box4{
-    
+
+.box4 {
     margin-left: 20px;
     margin-bottom: 15px;
 }
 
-.box4 input[type="text"]{
-    width: 76.5%;
-
+.box4 input[type="text"] {
+    width: 98%;
 }
 
-.box5{
-    
-    
+.box5 {
     margin-bottom: 15px;
 }
 
-.box5 input[type="text"]{
-    width: 55.3%;
-
+.box5 input[type="text"] {
+    width: 69%;
 }
 
-.box6{
-    
-    
+.box6 {
     margin-bottom: 15px;
 }
 
-.box6 input{
-    width: 61.35%;
-
+.box6 input {
+    width: 77%;
 }
 
-.box7{
-    
-    
+.box7 {
     margin-bottom: 15px;
 }
 
-.box7 input{
-    width: 59.9%;
-
+.box7 input {
+    width: 75.2%;
 }
 
-.row1_of2_2{
-    
-    
-    margin-bottom: 15px;
-    
-}
-
-.row1_of2_2 input[type="text"]{
-    width: 30.6%;
-
-}
-
-.row1_of2_3{
-    
-    
-    margin-bottom: 15px;
-    
-}
-
-.row1_of2_3 input{
-    width: 28.3%;
-
-}
-
-.row1{
-    
-    
-}
-
-.emergency{
-   
-    margin-bottom: 15px;
-}
-.table{
-    
-}
-.family{
-    
+.row1_of2_2 {
     margin-bottom: 15px;
 }
 
-.row1_of2_4{
-    
-   margin-left: 29px;
+.row1_of2_2 input[type="text"] {
+    width: 38.4%;
+}
+
+.row1_of2_3 {
     margin-bottom: 15px;
-    margin-top: 15px;
-    
 }
 
-.row1_of2_4 input{
-    width: 28.6%;
-    margin-bottom: 8px;
-
+.row1_of2_3 input {
+    width: 35.4%;
 }
 
-.row1_of2_5{
-    
+.row1 {
+}
+
+.emergency {
+    margin-bottom: 15px;
+}
+
+.table {
+}
+
+.family {
+    margin-bottom: 15px;
+}
+
+.row1_of2_4 {
     margin-left: 29px;
     margin-bottom: 15px;
     margin-top: 15px;
-    
 }
 
-.row1_of2_5 input{
-    width: 27%;
+.row1_of2_4 input {
+    width: 35.6%;
+    margin-bottom: 8px;
+}
+
+.row1_of2_5 {
+    margin-left: 29px;
     margin-bottom: 15px;
-
+    margin-top: 15px;
 }
-.row1_of2_5 #e_number{
+
+.row1_of2_5 input {
+    width: 39%;
+    margin-bottom: 15px;
+}
+
+.row1_of2_5 #e_number {
     width: 25%;
     margin-bottom: 15px;
-
 }
 
-.Table{
+.Table {
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.Table input[type=text]{
-   
+.Table input[type=text], .Table input[type=number] {
     background: transparent;
     border-bottom: none;
-    
-    
+    width: 100%;
 }
 
-.Table input[type=number]{
-   
-    background: transparent;
-    border-bottom: none;
-    
-    
-}
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 70.5%;
-
-  }
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
 td, th {
     border: 1px solid black;
-   
-    
-  }
+    text-align: left;
+}
 
-td{
+td {
     height: 30px;
+}
+
+.td1{
+    text-align: center;
 }
 
 input:focus {
     outline: none;
-  }
+}
