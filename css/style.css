@@ -1,4 +1,9 @@
-
+form { 
+     
+    width:80%;
+    margin-left: 300px;
+    
+    }
 
 input[type=text] {
     background: transparent;
@@ -20,8 +25,8 @@ input[type=number] {
 
 .box1{
     margin-top: 50px;
-    text-align: center;
-    margin-left: 104px;
+    
+    
     margin-bottom: 15px;
 }
 
@@ -31,19 +36,18 @@ input[type=number] {
 }
 
 .box2{
-    text-align: center;
-    margin-left: 99px;
+    
     margin-bottom: 15px;
 }
 
 .box2 input[type="text"]{
-    width: 66.8%;
+    width: 68.4%;
 
 }
 
 .row1_of2{
-    text-align: center;
-    margin-left: 98px;
+    
+    
     margin-bottom: 15px;
     
 }
@@ -58,62 +62,62 @@ input[type=number] {
 }
 
 .box3{
-    text-align: center;
-    margin-left: 105px;
+    
+    
     margin-bottom: 15px;
 }
 
 .box3 input[type="text"]{
-    width: 66.9%;
+    width: 67.6%;
 
 }
 .box4{
-    text-align: center;
-    margin-left: 129px;
+    
+    margin-left: 20px;
     margin-bottom: 15px;
 }
 
 .box4 input[type="text"]{
-    width: 74.5%;
+    width: 76.5%;
 
 }
 
 .box5{
-    text-align: center;
-    margin-left: 103px;
+    
+    
     margin-bottom: 15px;
 }
 
 .box5 input[type="text"]{
-    width: 56.3%;
+    width: 55.3%;
 
 }
 
 .box6{
-    text-align: center;
-    margin-left: 103px;
+    
+    
     margin-bottom: 15px;
 }
 
 .box6 input{
-    width: 61%;
+    width: 61.35%;
 
 }
 
 .box7{
-    text-align: center;
-    margin-left: 103px;
+    
+    
     margin-bottom: 15px;
 }
 
 .box7 input{
-    width: 59.8%;
+    width: 59.9%;
 
 }
 
 .row1_of2_2{
-    text-align: center;
-    margin-left: 102px;
+    
+    
     margin-bottom: 15px;
     
 }
@@ -124,37 +128,37 @@ input[type=number] {
 }
 
 .row1_of2_3{
-    text-align: center;
-    margin-left: 104px;
+    
+    
     margin-bottom: 15px;
     
 }
 
 .row1_of2_3 input{
-    width: 28.6%;
+    width: 28.3%;
 
 }
 
 .row1{
-    text-align: center;
+    
     
 }
 
 .emergency{
-    margin-left: -803px;
+   
     margin-bottom: 15px;
 }
 .table{
-    text-align: center;
+    
 }
 .family{
-    margin-left: -650px;
+    
     margin-bottom: 15px;
 }
 
 .row1_of2_4{
-    text-align: center;
-    margin-left: 104px;
+    
+   margin-left: 29px;
     margin-bottom: 15px;
     margin-top: 15px;
     
@@ -167,20 +171,26 @@ input[type=number] {
 }
 
 .row1_of2_5{
-    text-align: center;
-    margin-left: 104px;
+    
+    margin-left: 29px;
     margin-bottom: 15px;
     margin-top: 15px;
     
 }
 
 .row1_of2_5 input{
-    width: 26.3%;
+    width: 27%;
     margin-bottom: 15px;
 
 }
+.row1_of2_5 #e_number{
+    width: 25%;
+    margin-bottom: 15px;
+
+}
+
 .Table{
-    margin-left: 305px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
@@ -202,7 +212,7 @@ input[type=number] {
 table {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 65.5%;
+    width: 70.5%;
 
   }
 
@@ -215,3 +225,7 @@ td, th {
 td{
     height: 30px;
 }
+
+input:focus {
+    outline: none;
+  }
