@@ -18,7 +18,36 @@
 
   <body>
   <div class="Container">
-    <form action="/action_page.php">
+    <form action="/action_page.php"  enctype="multipart/form-data">
+      <div id="upload-container">
+        <label for="image">
+            <div id="upload-box">
+                ভাড়াটিয়ার এক কপি পাসপোর্ট সাইজ ছবি
+            </div>
+            <input type="file" id="image" name="image" accept="image/*" style="display: none;">
+        </label>
+        <div class="inputs">
+            <div class="header"><img id="image1" src="img/dmp.png">ঢাকা মেট্রোপলিটন পুলিশ
+            </div>
+            <label>বিভাগ :
+            <input type="text" id="district" name="district" value="" /></label><br>
+            <label id="lable">থানা  :
+            <input type="text" id="thana" name="thana" value="" /></label>
+            <h2 id="baratia"><u>ভাড়াটিয়া নিবন্ধন ফরম</u> </h2>
+        </div>
+        <div class="details-container">
+            <label id="lable">ফ্ল্যাট/তলা :
+            <input type="text" id="flatno" name="flatno" value="" /></label><br>
+            <label id="lable">বাড়ী/হোল্ডিং :
+            <input type="text" id="house_no" name="house_no" value="" /></label><br>
+            <label id="lable">রাস্তা :
+            <input type="text" id="road_no" name="road_no" value="" /></label><br>
+            <label id="lable">এলাকা   :
+            <input type="text" id="alaka" name="alaka" value="" /></label><br>
+            <label id="lable">পোস্ট কোড   :
+            <input type="text" id="post_code" name="postcode" value="" /></label>
+        </div>
+      </div>
     
       <div class="box1">
         <label id="Fname">১. ভাড়াটিয়া/বাড়ীওয়ালার নাম :</label>
@@ -112,8 +141,8 @@
         <table class="Table">
           <tr>
             <th>ক্রঃ নং</th>
-            <th>নাম </th>
-            <th>বয়স </th>
+            <th style="width:35%">নাম </th>
+            <th style="width:15%">বয়স </th>
             <th>পেশা </th>
             <th>মোবাইল নম্বর</th>
           </tr>
