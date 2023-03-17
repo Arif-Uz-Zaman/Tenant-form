@@ -17,160 +17,334 @@
   </head>
 
   <body>
-  <div class="Container">
-    <form action="/action_page.php"  enctype="multipart/form-data">
-      <div id="upload-container">
-        <label for="image">
-            <div id="upload-box">
-                ভাড়াটিয়ার এক কপি পাসপোর্ট সাইজ ছবি
+    <div class="Container">
+      <form action="/action_page.php" enctype="multipart/form-data">
+        <div id="upload-container">
+          <label for="image">
+            <div id="upload-box">ভাড়াটিয়ার এক কপি পাসপোর্ট সাইজ ছবি</div>
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              style="display: none"
+            />
+          </label>
+          <div class="inputs">
+            <div class="header">
+              <img id="image1" src="img/dmp.png" />ঢাকা মেট্রোপলিটন পুলিশ
             </div>
-            <input type="file" id="image" name="image" accept="image/*" style="display: none;">
-        </label>
-        <div class="inputs">
-            <div class="header"><img id="image1" src="img/dmp.png">ঢাকা মেট্রোপলিটন পুলিশ
-            </div>
-            <label>বিভাগ :
-            <input type="text" id="district" name="district" value="" /></label><br>
-            <label id="lable">থানা  :
-            <input type="text" id="thana" name="thana" value="" /></label>
-            <h2 id="baratia"><u>ভাড়াটিয়া নিবন্ধন ফরম</u> </h2>
+            <label
+              >বিভাগ :
+              <input
+                type="text"
+                id="district"
+                name="district"
+                value="" /></label
+            ><br />
+            <label id="lable"
+              >থানা : <input type="text" id="thana" name="thana" value=""
+            /></label>
+            <h2 id="baratia"><u>ভাড়াটিয়া নিবন্ধন ফরম</u></h2>
+          </div>
+          <div class="details-container">
+            <label id="lable"
+              >ফ্ল্যাট/তলা :
+              <input type="text" id="flatno" name="flatno" value="" /></label
+            ><br />
+            <label id="lable"
+              >বাড়ী/হোল্ডিং :
+              <input
+                type="text"
+                id="house_no"
+                name="house_no"
+                value="" /></label
+            ><br />
+            <label id="lable"
+              >রাস্তা :
+              <input type="text" id="road_no" name="road_no" value="" /></label
+            ><br />
+            <label id="lable"
+              >এলাকা :
+              <input type="text" id="alaka" name="alaka" value="" /></label
+            ><br />
+            <label id="lable"
+              >পোস্ট কোড :
+              <input type="text" id="post_code" name="postcode" value=""
+            /></label>
+          </div>
         </div>
-        <div class="details-container">
-            <label id="lable">ফ্ল্যাট/তলা :
-            <input type="text" id="flatno" name="flatno" value="" /></label><br>
-            <label id="lable">বাড়ী/হোল্ডিং :
-            <input type="text" id="house_no" name="house_no" value="" /></label><br>
-            <label id="lable">রাস্তা :
-            <input type="text" id="road_no" name="road_no" value="" /></label><br>
-            <label id="lable">এলাকা   :
-            <input type="text" id="alaka" name="alaka" value="" /></label><br>
-            <label id="lable">পোস্ট কোড   :
-            <input type="text" id="post_code" name="postcode" value="" /></label>
+
+        <div class="box1">
+          <label id="Fname">১. ভাড়াটিয়া/বাড়ীওয়ালার নাম :</label>
+          <input type="text" id="fname" name="fname" value="" />
         </div>
-      </div>
-    
-      <div class="box1">
-        <label id="Fname">১. ভাড়াটিয়া/বাড়ীওয়ালার নাম :</label>
-        <input type="text" id="fname" name="fname" value="" />
-      </div>
-      <div class="box2">
-        <label id="father">২. পিতার নাম :</label>
-        <input type="text" id="Father_name" name="Father_name" value="" />
-      </div>
-      <div class="row1_of2">
-        <label>৩. জন্ম তারিখ :</label>
-        <input type="text" id="date_of_birth" name="date_of_birth" value="" />
-        <label id="lname"> বৈবাহিক অবস্থা :</label>
-        <input
-          class="input2"
-          type="text"
-          id="married_status"
-          name="married_status"
-          value=""
-        />
-      </div>
-      <div class="box3">
-        <label>৪. স্থায়ী ঠিকানা :</label>
-        <input
-          type="text"
-          id="Present_address"
-          name="Present_address"
-          value=""
-        />
-      </div>
-      <div class="box4">
-        <input
-          type="text"
-          id="Present_address"
-          name="Present_address"
-          value=""
-        />
-      </div>
-      <div class="box5">
-        <label>৫. পেশা ও প্রতিষ্ঠান/কর্মস্থলের ঠিকানা :</label>
-        <input
-          type="text"
-          id="Present_address"
-          name="Present_address"
-          value=""
-        />
-      </div>
-      <div class="row1_of2_2">
-        <label>৬. ধর্ম :</label>
-        <input type="text" id="religion" name="religion" value="" />
-        <label> শিক্ষাগত যোগ্যতা :</label>
-        <input
-          type="text"
-          id="edu_Qualification"
-          name="edu_Qualification"
-          value=""
-        />
-      </div>
-      <div class="row1_of2_3">
-        <label>৭. মোবাইল নম্বর :</label>
-        <input type="number" id="mobile_number" name="mobile_number" value="" />
-        <label> ই-মেইল আইডি :</label>
-        <input type="email" id="email" name="email" value="" />
-      </div>
-      <div class="box6">
-        <label>৮. জাতীয় পরিচয়পত্র নম্বর :</label>
-        <input type="number" id="nid_number" name="nid_number" value="" />
-      </div>
-      <div class="box7">
-        <label>৯. পাসপোর্ট নম্বর (যদি থাকে) :</label>
-        <input type="number" id="p_number" name="p_number" value="" />
-      </div>
-      <div class="row1">
-        <label class="emergency">১০. জরুরী যোগাযোগ :</label><br />
-        <div class="row1_of2_4">
-          <label>(ক) নাম :</label>
-          <input type="text" id="E_name" name="E_name" value="" />
-          <label>(খ) সম্পর্ক :</label>
-          <input type="text" id="relation" name="relation" value="" /><br />
+        <div class="box2">
+          <label id="father">২. পিতার নাম :</label>
+          <input type="text" id="Father_name" name="Father_name" value="" />
         </div>
-        <div class="row1_of2_5">
-          <label>(গ) ঠিকানা :</label>
-          <input type="text" id="e_address" name="e_address" value="" />
-          <label>(ঘ) মোবাইল নম্বর :</label>
-          <input type="number" id="e_number" name="e_number" value="" />
+        <div class="row1_of2">
+          <label>৩. জন্ম তারিখ :</label>
+          <input type="text" id="date_of_birth" name="date_of_birth" value="" />
+          <label id="lname"> বৈবাহিক অবস্থা :</label>
+          <input
+            class="input2"
+            type="text"
+            id="married_status"
+            name="married_status"
+            value=""
+          />
         </div>
-      </div>
-      <div class="table">
-        <label class="family">১১. পরিবার / মেসের সঙ্গীয় সদস্যদের বিবরণ :</label
-        ><br />
-        <table class="Table">
-          <tr>
-            <th>ক্রঃ নং</th>
-            <th style="width:35%">নাম </th>
-            <th style="width:15%">বয়স </th>
-            <th>পেশা </th>
-            <th>মোবাইল নম্বর</th>
-          </tr>
-          <tr>
-            <td class="td1">১।</td>
-            <td><input type="text" name="name" /></td>
-            <td><input type="number" name="age" /></td>
-            <td><input type="text" name="occupation" /></td>
-            <td><input type="number" name="mobile-number" /></td>
-          </tr>
-          <tr>
-            <td class="td1">২।</td>
-            <td><input type="text" name="name" /></td>
-            <td><input type="number" name="age" /></td>
-            <td><input type="text" name="occupation" /></td>
-            <td><input type="number" name="mobile-number" /></td>
-          </tr>
-          <tr>
-            <td class="td1">৩।</td>
-            <td><input type="text" name="name" /></td>
-            <td><input type="number" name="age" /></td>
-            <td><input type="text" name="occupation" /></td>
-            <td><input type="number" name="mobile-number" /></td>
-          </tr>
-        </table>
-      </div>
-    
-    </form>
-  </div>
+        <div class="box3">
+          <label>৪. স্থায়ী ঠিকানা :</label>
+          <input
+            type="text"
+            id="Present_address"
+            name="Present_address"
+            value=""
+          />
+        </div>
+        <div class="box4">
+          <input
+            type="text"
+            id="Present_address"
+            name="Present_address"
+            value=""
+          />
+        </div>
+        <div class="box5">
+          <label>৫. পেশা ও প্রতিষ্ঠান/কর্মস্থলের ঠিকানা :</label>
+          <input
+            type="text"
+            id="Present_address"
+            name="Present_address"
+            value=""
+          />
+        </div>
+        <div class="row1_of2_2">
+          <label>৬. ধর্ম :</label>
+          <input type="text" id="religion" name="religion" value="" />
+          <label> শিক্ষাগত যোগ্যতা :</label>
+          <input
+            type="text"
+            id="edu_Qualification"
+            name="edu_Qualification"
+            value=""
+          />
+        </div>
+        <div class="row1_of2_3">
+          <label>৭. মোবাইল নম্বর :</label>
+          <input
+            type="number"
+            id="mobile_number"
+            name="mobile_number"
+            value=""
+          />
+          <label> ই-মেইল আইডি :</label>
+          <input type="email" id="email" name="email" value="" />
+        </div>
+        <div class="box6">
+          <label>৮. জাতীয় পরিচয়পত্র নম্বর :</label>
+          <input type="number" id="nid_number" name="nid_number" value="" />
+        </div>
+        <div class="box7">
+          <label>৯. পাসপোর্ট নম্বর (যদি থাকে) :</label>
+          <input type="number" id="p_number" name="p_number" value="" />
+        </div>
+        <div class="row1">
+          <label class="emergency">১০. জরুরী যোগাযোগ :</label><br />
+          <div class="row1_of2_4">
+            <label>(ক) নাম :</label>
+            <input type="text" id="E_name" name="E_name" value="" />
+            <label>(খ) সম্পর্ক :</label>
+            <input type="text" id="relation" name="relation" value="" /><br />
+          </div>
+          <div class="row1_of2_5">
+            <label>(গ) ঠিকানা :</label>
+            <input type="text" id="e_address" name="e_address" value="" />
+            <label>(ঘ) মোবাইল নম্বর :</label>
+            <input type="number" id="e_number" name="e_number" value="" />
+          </div>
+        </div>
+        <div class="table">
+          <label class="family"
+            >১১. পরিবার / মেসের সঙ্গীয় সদস্যদের বিবরণ :</label
+          ><br />
+          <table class="Table">
+            <tr>
+              <th>ক্রঃ নং</th>
+              <th style="width: 35%">নাম</th>
+              <th style="width: 15%">বয়স</th>
+              <th>পেশা</th>
+              <th>মোবাইল নম্বর</th>
+            </tr>
+            <tr>
+              <td class="td1">১।</td>
+              <td><input type="text" name="name" /></td>
+              <td><input type="number" name="age" /></td>
+              <td><input type="text" name="occupation" /></td>
+              <td><input type="number" name="mobile-number" /></td>
+            </tr>
+            <tr>
+              <td class="td1">২।</td>
+              <td><input type="text" name="name" /></td>
+              <td><input type="number" name="age" /></td>
+              <td><input type="text" name="occupation" /></td>
+              <td><input type="number" name="mobile-number" /></td>
+            </tr>
+            <tr>
+              <td class="td1">৩।</td>
+              <td><input type="text" name="name" /></td>
+              <td><input type="number" name="age" /></td>
+              <td><input type="text" name="occupation" /></td>
+              <td><input type="number" name="mobile-number" /></td>
+            </tr>
+          </table>
+          <div class="row1_of2_6">
+            <label>১২. গৃহকর্মীর নাম :</label>
+            <input
+              type="text"
+              id="house_wife"
+              name="house_wife"
+              value=""
+            />
+            <label id="hname">জাতীয় পরিচয়পত্র নং :</label>
+            <input
+              class="input2"
+              type="number"
+              id="housewife_nid_number"
+              name="housewife_nid_number"
+              value=""
+            />
+          </div>
+          <div class="box8">
+            <label>মোবাইল নম্বর  :</label>
+            <input
+              type="number"
+              id="housewife_mobile_number"
+              name="housewife_mobile_number"
+              value=""
+            />
+            <label>স্থায়ী ঠিকানা  :</label>
+            <input
+              type="text"
+              id="housewife_Present_address"
+              name="housewife_Present_address"
+              value=""
+            />
+          </div>
+          <div class="box9">
+            <input
+              type="text"
+              id="housewife_Present_address"
+              name="housewife_Present_address"
+              value=""
+            />
+          </div>
+          <div class="row1_of2_7">
+            <label>১৩. ড্রাইভারের নাম :</label>
+            <input
+              type="text"
+              id="driver_name"
+              name="driver_name"
+              value=""
+            />
+            <label id="dname">জাতীয় পরিচয়পত্র নং :</label>
+            <input
+              class="input2"
+              type="number"
+              id="driver_nid_number"
+              name="driver_nid_number"
+              value=""
+            />
+          </div>
+          <div class="box8">
+            <label>মোবাইল নম্বর  :</label>
+            <input
+              type="number"
+              id="driver_mobile_number"
+              name="driver_mobile_number"
+              value=""
+            />
+            <label>স্থায়ী ঠিকানা  :</label>
+            <input
+              type="text"
+              id="driver_Present_address"
+              name="driver_Present_address"
+              value=""
+            />
+          </div>
+          <div class="box10">
+            <input
+              type="text"
+              id="driver_Present_address"
+              name="driver_Present_address"
+              value=""
+            />
+          </div>
+          <div class="row1_of2_8">
+            <label>১৪. পূর্ববর্তী বাড়িওয়ালার নাম : </label>
+            <input
+              type="text"
+              id="previous_houseowner_name"
+              name="previous_houseowner_name"
+              value=""
+            />
+            <label id="Phw_name">মোবাইল নম্বর :</label>
+            <input
+              class="input2"
+              type="number"
+              id="previous_houseowner_mobile_number"
+              name="previous_houseowner_mobile_number"
+              value=""
+            />
+          </div>
+          <div class="box11">
+            <label>ঠিকানা  :</label>
+            <input
+              type="text"
+              id="previous_houseowner_address"
+              name="previous_houseowner_address"
+              value=""
+            />
+          </div>
+          <div class="row1_of2_9">
+            <label>১৫. পূর্ববর্তী বাসা ছাড়ার কারণ : </label>
+            <input
+              type="text"
+              id="reason_toleave_previous_house"
+              name="reason_toleave_previous_house"
+              value=""
+            />
+          </div>
+          <div class="row1_of2_10">
+            <label>১৬. বর্তমান বাড়িওয়ালার নাম :</label>
+            <input
+              type="text"
+              id="present_houseowner_name"
+              name="present_houseowner_name"
+              value=""
+            />
+            <label id="Pre_hw_name">মোবাইল নম্বর :</label>
+            <input
+              class="input2"
+              type="number"
+              id="present_houseowner_mobile_number"
+              name="present_houseowner_mobile_number"
+              value=""
+            />
+          </div>
+          <div class="row1_of2_9">
+            <label>১৫. পূর্ববর্তী বাসা ছাড়ার কারণ : </label>
+            <input
+              type="text"
+              id="reason_toleave_previous_house"
+              name="reason_toleave_previous_house"
+              value=""
+            />
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
