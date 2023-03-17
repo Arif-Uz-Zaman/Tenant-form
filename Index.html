@@ -18,7 +18,7 @@
 
   <body>
     <div class="Container">
-      <form action="/action_page.php" enctype="multipart/form-data">
+      <form action="/action_page.php" method="post" enctype="multipart/form-data" >
         <div id="upload-container">
           <label for="image">
             <div id="upload-box">ভাড়াটিয়ার এক কপি পাসপোর্ট সাইজ ছবি</div>
@@ -202,12 +202,7 @@
           </table>
           <div class="row1_of2_6">
             <label>১২. গৃহকর্মীর নাম :</label>
-            <input
-              type="text"
-              id="house_wife"
-              name="house_wife"
-              value=""
-            />
+            <input type="text" id="house_wife" name="house_wife" value="" />
             <label id="hname">জাতীয় পরিচয়পত্র নং :</label>
             <input
               class="input2"
@@ -218,14 +213,14 @@
             />
           </div>
           <div class="box8">
-            <label>মোবাইল নম্বর  :</label>
+            <label>মোবাইল নম্বর :</label>
             <input
               type="number"
               id="housewife_mobile_number"
               name="housewife_mobile_number"
               value=""
             />
-            <label>স্থায়ী ঠিকানা  :</label>
+            <label>স্থায়ী ঠিকানা :</label>
             <input
               type="text"
               id="housewife_Present_address"
@@ -243,12 +238,7 @@
           </div>
           <div class="row1_of2_7">
             <label>১৩. ড্রাইভারের নাম :</label>
-            <input
-              type="text"
-              id="driver_name"
-              name="driver_name"
-              value=""
-            />
+            <input type="text" id="driver_name" name="driver_name" value="" />
             <label id="dname">জাতীয় পরিচয়পত্র নং :</label>
             <input
               class="input2"
@@ -259,14 +249,14 @@
             />
           </div>
           <div class="box8">
-            <label>মোবাইল নম্বর  :</label>
+            <label>মোবাইল নম্বর :</label>
             <input
               type="number"
               id="driver_mobile_number"
               name="driver_mobile_number"
               value=""
             />
-            <label>স্থায়ী ঠিকানা  :</label>
+            <label>স্থায়ী ঠিকানা :</label>
             <input
               type="text"
               id="driver_Present_address"
@@ -300,7 +290,7 @@
             />
           </div>
           <div class="box11">
-            <label>ঠিকানা  :</label>
+            <label>ঠিকানা :</label>
             <input
               type="text"
               id="previous_houseowner_address"
@@ -334,17 +324,86 @@
               value=""
             />
           </div>
-          <div class="row1_of2_9">
-            <label>১৫. পূর্ববর্তী বাসা ছাড়ার কারণ : </label>
+          <div class="row1_of2_11">
+            <label>১৭. বর্তমান বাড়ীতে কোন তারিখ থেকে বসবাস :</label>
             <input
               type="text"
-              id="reason_toleave_previous_house"
-              name="reason_toleave_previous_house"
+              id="timeof_startLiving_in_newhouse"
+              name="timeof_startLiving_in_newhouse"
               value=""
             />
           </div>
+          <div class="box12">
+            <input
+              type="text"
+              id="form_fill_date"
+              name="form_fill_date"
+              value=""
+            />
+            <input
+              type="file"
+              id="sign_image"
+              name="sign_image"
+              accept="image/*"
+              style="display: "
+            /><br />
+            <label id="formfilldate">তারিখ</label>
+            <label id="formfillsign">ভাড়াটিয়ার স্বাক্ষর</label>
+          </div>
+          <div class="row1_of2_12">
+            <label>বিঃ দ্রঃ এই ফরমের একটি কপি বাড়ির মালিক অবশ্যই সংরক্ষণ করবেন। </label>
+          <div>
         </div>
+        <button type="submit" onclick="return confirmSubmit()" class="signupbtn">Submit</button>
       </form>
     </div>
+    <script>
+      const uploadBox = document.querySelector("#upload-box");
+      const imageInput = document.querySelector("#image");
+      const titleInput = document.querySelector("#title");
+      const descriptionInput = document.querySelector("#description");
+
+      
+
+      imageInput.addEventListener("change", function () {
+        const fileName = imageInput.value.split("\\").pop();
+        uploadBox.textContent = fileName;
+      });
+
+      titleInput.addEventListener("change", function () {
+        console.log("Title changed: " + titleInput.value);
+      });
+
+      descriptionInput.addEventListener("change", function () {
+        console.log("Description changed: " + descriptionInput.value);
+      });
+    </script>
+    <script>
+      function confirmSubmit() {
+      var dialog = document.createElement("div");
+      dialog.className = "confirm-dialog";
+      dialog.innerHTML = "<b>Are you sure you want to submit?</b><br><button onclick='confirmDialog(true)'>Yes</button> <button onclick='confirmDialog(false)'>No</button>";
+      document.body.appendChild(dialog);
+
+      return false; // prevent form submission until user confirms
+      }
+
+      function confirmDialog(confirmed) {
+        var dialog = document.querySelector(".confirm-dialog");
+        document.body.removeChild(dialog);
+  
+        if (confirmed) {
+          document.querySelector("form").submit();
+          }
+        }
+    </script>
+    
+
+    
+
+
+
+
+
   </body>
 </html>

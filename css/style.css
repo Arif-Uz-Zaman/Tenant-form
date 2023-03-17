@@ -127,6 +127,41 @@ input[type=text], input[type=email], input[type=number] {
     width: 91.1%;
 }
 
+.box12 {
+    margin-left: 26px;
+    margin-bottom: 15px;
+}
+.box12 input[type="text"] {
+    width: 12%;
+    margin-bottom: 4px;
+}
+.table .box12 #formfilldate{
+    
+    margin-left: 35px;
+}
+.table .box12 #formfillsign{
+    
+    margin-left: 550px;
+    
+}
+.table .box12 #sign_image{
+    width: 120px;
+    margin-left: 514px;
+    height: 19px;
+    border-bottom: 2px dotted #000000;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(13, 12, 12);
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;  
+}
+
+
+
+
 
 .row1_of2_2 {
     margin-bottom: 15px;
@@ -240,6 +275,23 @@ input[type=text], input[type=email], input[type=number] {
     width: 34%;
 }
 
+.row1_of2_11 {
+    margin-bottom: 35px;
+}
+
+.row1_of2_11 input[type="text"] {
+    width: 62.6%;
+}
+
+.row1_of2_12 {
+    margin-bottom: 100px;
+    padding-top: 2%;
+    margin-left: 26px;
+    font-weight: bold;
+}
+
+
+
 .Table {
     margin-left: 20px;
     margin-top: 10px;
@@ -299,6 +351,7 @@ input:focus {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
+    overflow: hidden
 }
 
 #upload-box:hover {
@@ -417,3 +470,52 @@ u {
 .details-container #post_code {
     width: 141px;
 }
+
+
+.signupbtn {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    float: right;
+    width: 20%;
+    margin-right: 15px;
+    border-radius: 5px;
+    font-size: px;
+  }
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  button:hover {
+    opacity:2;
+  }
+
+
+.confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+    z-index: 9999;
+  }
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #aaffaa;
+    border: 1px solid green;
+    padding: 20px;
+    z-index: 9999;
+  }
